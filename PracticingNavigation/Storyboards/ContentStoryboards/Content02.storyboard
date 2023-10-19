@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Content02ViewController" id="Y6W-OH-hqX" customClass="Content02ViewController" customModule="PracticingNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4k-XC-QzE">
+                                <rect key="frame" x="260.33333333333331" y="758" width="107.66666666666669" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="nextButton"/>
+                                <connections>
+                                    <action selector="tappedNextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tvx-DL-i0i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="op4-no-fVv">
+                                <rect key="frame" x="25" y="758" width="103" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="infoButton"/>
+                                <connections>
+                                    <action selector="tappedInfoButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="00P-nT-XPE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5BD-TY-iXE">
+                                <rect key="frame" x="25.000000000000007" y="84" width="83.666666666666686" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5sf-PW-xvk">
+                                <rect key="frame" x="25" y="185" width="343" height="493"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="493" id="UmD-lM-Lop"/>
+                                    <constraint firstAttribute="width" constant="343" id="uDi-Pg-7iC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="q4k-XC-QzE" secondAttribute="trailing" constant="25" id="03W-da-87G"/>
+                            <constraint firstItem="5BD-TY-iXE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="3xD-H3-mf3"/>
+                            <constraint firstItem="op4-no-fVv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="7xb-c1-XeB"/>
+                            <constraint firstItem="5BD-TY-iXE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="8Yy-9E-WFZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="q4k-XC-QzE" secondAttribute="bottom" constant="25" id="DVL-mP-vOV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="op4-no-fVv" secondAttribute="bottom" constant="25" id="W9Z-Ta-ovJ"/>
+                            <constraint firstItem="5sf-PW-xvk" firstAttribute="top" secondItem="5BD-TY-iXE" secondAttribute="bottom" constant="80" id="XMV-d7-dPT"/>
+                            <constraint firstItem="5sf-PW-xvk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="iM3-b4-G9q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="Oho-w5-22E"/>
+                    <connections>
+                        <outlet property="animalImageView" destination="5sf-PW-xvk" id="Y4b-A4-oxO"/>
+                        <outlet property="infoButton" destination="op4-no-fVv" id="Skc-1E-ng8"/>
+                        <outlet property="nameLabel" destination="5BD-TY-iXE" id="gpZ-h3-TCB"/>
+                        <outlet property="nextButton" destination="q4k-XC-QzE" id="oSG-i3-O0p"/>
+                        <outlet property="titleNavigationItem" destination="Oho-w5-22E" id="cg1-HQ-ufO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

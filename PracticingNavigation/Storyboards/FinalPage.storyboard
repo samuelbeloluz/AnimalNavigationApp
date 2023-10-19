@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FinalPageViewController" id="Y6W-OH-hqX" customClass="FinalPageViewController" customModule="PracticingNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phG-gO-55z">
+                                <rect key="frame" x="25.000000000000007" y="84" width="83.666666666666686" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2W-Yi-Jl2">
+                                <rect key="frame" x="25" y="758" width="343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="helpButton"/>
+                                <connections>
+                                    <action selector="tappedHelpButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Sn4-4L-Sht"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tipLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jo0-T5-Kt8">
+                                <rect key="frame" x="25" y="537" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titleLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Inv-iJ-iLG">
+                                <rect key="frame" x="140" y="265" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Inv-iJ-iLG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="140" id="56X-5U-IPO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="M2W-Yi-Jl2" secondAttribute="trailing" constant="25" id="980-pz-THr"/>
+                            <constraint firstItem="phG-gO-55z" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="25" id="BuQ-2K-Ahv"/>
+                            <constraint firstItem="M2W-Yi-Jl2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="U2L-uD-haJ"/>
+                            <constraint firstItem="jo0-T5-Kt8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="Zcp-sV-hLU"/>
+                            <constraint firstItem="Inv-iJ-iLG" firstAttribute="top" secondItem="phG-gO-55z" secondAttribute="bottom" constant="160" id="clf-Ad-rBv"/>
+                            <constraint firstItem="M2W-Yi-Jl2" firstAttribute="top" secondItem="jo0-T5-Kt8" secondAttribute="bottom" constant="200" id="pmc-rx-t4y"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="M2W-Yi-Jl2" secondAttribute="bottom" constant="25" id="rfP-nh-NAV"/>
+                            <constraint firstItem="phG-gO-55z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="s4H-yd-EoP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="npz-KO-AOe">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="vqd-aN-wlK"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="helpButton" destination="M2W-Yi-Jl2" id="SjD-yv-y51"/>
+                        <outlet property="nameLabel" destination="phG-gO-55z" id="825-Pz-xZn"/>
+                        <outlet property="tipLabel" destination="jo0-T5-Kt8" id="4xP-zd-KQa"/>
+                        <outlet property="titleLabel" destination="Inv-iJ-iLG" id="d0y-II-2xb"/>
+                        <outlet property="titleNavigationItem" destination="npz-KO-AOe" id="oMh-6p-Ok7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.946564885496173" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
