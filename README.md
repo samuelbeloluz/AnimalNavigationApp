@@ -36,7 +36,9 @@ https://github.com/samuelbeloluz/AnimalNavigationApp/assets/120046852/17c5f24c-7
 - [UIKit](https://developer.apple.com/documentation/uikit)
 - [Xcode](https://developer.apple.com/documentation/xcode)
 - [Auto Layout](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html)
-- [Constraints](https://developer.apple.com/documentation/uikit/uiview/1622464-constraints)
+- [Modal Navigation](https://getuikit.com/docs/modal)
+- [Navigation Controller](https://developer.apple.com/documentation/uikit/uinavigationcontroller)
+- [AVFoundation](https://developer.apple.com/documentation/avfoundation/)
 
 ## 🧑🏻‍💻 Wanna Try It ??
 
