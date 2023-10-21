@@ -45,13 +45,13 @@ https://github.com/samuelbeloluz/AnimalNavigationApp/assets/120046852/17c5f24c-7
 01. Clone the project
 ```bash
   
-  $ git clone https://github.com/samuelbeloluz/MeditationApp.git
+  $ git clone https://github.com/samuelbeloluz/AnimalNavigationApp.git
 ````
 
 02. Open the project in Xcode:
 ```bash
-  $ cd PrimeiraTelaCadastroCurso
-  $ open PrimeiraTelaCadastroCurso.xcodeproj
+  $ cd PracticingNavigation
+  $ open PracticingNavigation.xcodeproj
 ````
 
 ## 📝 License
