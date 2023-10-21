@@ -7,6 +7,8 @@
 </h1>
 
 
+## 📼 Preview
+
 
 https://github.com/samuelbeloluz/AnimalNavigationApp/assets/120046852/9638da4b-2340-4d27-aac7-6feb558e3e7c
 
